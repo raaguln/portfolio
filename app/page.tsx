@@ -1,11 +1,12 @@
 import Link from "next/link"
+import Title from "./(components)/title"
 
 export default function Home() {
   return (
     <main>
-      <h1>Raagul Nagendran</h1>
+      <Title>raagul nagendran</Title>
       <p>
-        I am a software engineer + data scientist from India. I love digging
+        Your friendly neighbourhood Data Scientist / Software Engineer based out of Seattle. I love digging
         into data to uncover trends, build highly custom software experiences
         and optimizing for the fastest user experience.
       </p>
@@ -38,7 +39,7 @@ export default function Home() {
         , or{" "}
         <Link href="https://twitter.com/byontheinferno" target="_blank">
           Twitter
-        </Link>
+        </Link>.
       </p>
       {/* <Link href="">Mail</Link> */}
     </main>

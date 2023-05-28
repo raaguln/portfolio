@@ -28,12 +28,12 @@ const Project: FC<Data> = ({ data }) => {
       </div>
       {url ? (
         <a href={url} target="_blank" rel="noreferrer">
-          <h4 className={styles.projectTitle}>{title}</h4>
+          <h3 className={styles.projectTitle}>{title}</h3>
         </a>
       ) : (
-        <h4 className={styles.projectTitle}>{title}</h4>
+        <h3 className={styles.projectTitle}>{title}</h3>
       )}
-      {brand ? <h5 className={styles.brand}>{brand}</h5> : null}
+      {brand ? <h4 className={styles.brand}>{brand}</h4> : null}
       <p className={styles.description}>{description}</p>
       {interestingDetails ? (
         <p className={styles.description}>

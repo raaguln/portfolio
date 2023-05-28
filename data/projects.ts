@@ -51,19 +51,6 @@ const projects: ProjectData[] = [
     date: "",
   },
   {
-    title: "Portfolio - Data Story Lab",
-    brand: "Condé Nast",
-    description:
-      "Portfolio website for the Data Story Lab team - the data visualization team which I was a part of.",
-    interestingDetails:
-      "The parallax effects were fun to develop, and are more fun to play around with!",
-    img: "images/data-story-lab.png",
-    imgAlt: "Landing page of the Data Story Lab team's portfolio page.",
-    imgCaption: "Landing page of the Data Story Lab team's portfolio page.",
-    url: "https://datavisualization.condenast.com/",
-    date: "",
-  },
-  {
     title: "Mapping the Flavors of China",
     brand: "Epicurious",
     description:

@@ -1,0 +1,12 @@
+.titleContainer {
+  display: inline-block;
+  background-color: aqua;
+  padding: 0 16px 8px 16px;
+  border-radius: 26px;
+  border-top-left-radius: 0;
+  margin-bottom: 1rem;
+}
+
+.title {
+  color: black;
+}

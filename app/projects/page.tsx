@@ -1,5 +1,7 @@
+import Title from "../(components)/Title"
+
 const Projects = () => {
-  return <div></div>
+  return <Title>projects</Title>
 }
 
 export default Projects

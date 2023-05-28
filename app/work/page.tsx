@@ -1,10 +1,11 @@
 import projects from "@/data/projects"
-import Project from "./project"
+import Project from "../(components)/project"
+import Title from "../(components)/Title"
 
 const Work = () => {
   return (
     <>
-      <h1 className="">Work</h1>
+      <Title>work</Title>
       <section className="">
         {projects.map((d, i) => (
           <Project data={d} key={i} />
