@@ -1,4 +1,4 @@
-import Link from "next/link"
+import PrettyLink from "./(components)/prettyLink"
 import Title from "./(components)/title"
 
 export default function Home() {
@@ -12,14 +12,14 @@ export default function Home() {
       </p>
       <p>
         To check out my craft at previous companies, you can visit the{" "}
-        <Link href="/work" target="_blank">
+        <PrettyLink href="/work" target="_blank">
           work
-        </Link>{" "}
+        </PrettyLink>{" "}
         section. I also tinker with software and data during my free time, which
         you can find in the{" "}
-        <Link href="/projects" target="_blank">
+        <PrettyLink href="/projects" target="_blank">
           projects
-        </Link>{" "}
+        </PrettyLink>{" "}
         section.
       </p>
 
@@ -29,17 +29,17 @@ export default function Home() {
       </p>
       <p>
         You can find me on{" "}
-        <Link href="https://github.com/beyondtheinferno" target="_blank">
+        <PrettyLink href="https://github.com/beyondtheinferno" target="_blank">
           Github
-        </Link>
+        </PrettyLink>
         ,{" "}
-        <Link href="https://www.linkedin.com/in/raagul-n/" target="_blank">
+        <PrettyLink href="https://www.linkedin.com/in/raagul-n/" target="_blank">
           LinkedIn
-        </Link>
+        </PrettyLink>
         , or{" "}
-        <Link href="https://twitter.com/byontheinferno" target="_blank">
+        <PrettyLink href="https://twitter.com/byontheinferno" target="_blank">
           Twitter
-        </Link>.
+        </PrettyLink>.
       </p>
       {/* <Link href="">Mail</Link> */}
     </main>
