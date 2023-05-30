@@ -6,8 +6,8 @@ export default function Home() {
     <main>
       <Title>raagul nagendran</Title>
       <p>
-        Your friendly neighbourhood Data Scientist / Software Engineer based out of Seattle. I love digging
-        into data to uncover trends, build highly custom software experiences
+        Your friendly neighbourhood Data Scientist / Software Engineer based out of Seattle. I love
+        digging into data to uncover trends, build highly custom software experiences
         and optimizing for the fastest user experience.
       </p>
       <p>

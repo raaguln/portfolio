@@ -1,6 +1,8 @@
 import { FC } from "react"
 import styles from "./project.module.css"
 import { ProjectData } from "@/data/projects"
+import PrettyLink from "./prettyLink"
+import Link from "next/link"
 
 interface Data {
   data: ProjectData
@@ -27,9 +29,11 @@ const Project: FC<Data> = ({ data }) => {
         </figure>
       </div>
       {url ? (
-        <a href={url} target="_blank" rel="noreferrer">
-          <h3 className={styles.projectTitle}>{title}</h3>
-        </a>
+        <span className={styles.span}>
+          <Link href={url} target="_blank">
+            <h3 className={styles.projectTitle}>{title}</h3>
+          </Link>
+        </span>
       ) : (
         <h3 className={styles.projectTitle}>{title}</h3>
       )}

@@ -1,6 +1,6 @@
 import projects from "@/data/projects"
 import Project from "../(components)/project"
-import Title from "../(components)/Title"
+import Title from "../(components)/title"
 
 const Work = () => {
   return (

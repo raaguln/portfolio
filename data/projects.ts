@@ -73,8 +73,8 @@ const projects: ProjectData[] = [
       Consists of animated cluster charts, parallax image gallery, custom visualizations and lots more - 
       all animated through scroll-triggers.`,
     interestingDetails: `A lot of performance optimizations were done to ensure core web vitals along
-     with FCP and TTI had the best score possible. We are talking about Service Workers, animation optimizations,
-     optimizations in React and lazy loading.`,
+     with FCP and TTI had the best score possible. We are talking about Web Workers, animation optimizations,
+     rendering optimizations and lazy loading.`,
     img: "images/what-a-year.png",
     imgAlt: "",
     imgCaption: "",
