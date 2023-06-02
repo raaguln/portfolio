@@ -1,9 +1,8 @@
 import { FC } from "react"
-import styles from "./project.module.css"
-import { ProjectData } from "@/data/projects"
-import PrettyLink from "./prettyLink"
-import { kalam } from "../fonts"
 import Link from "next/link"
+import { ProjectData } from "@/data/projects"
+import { kalam } from "../fonts"
+import styles from "./project.module.css"
 
 interface Data {
   data: ProjectData

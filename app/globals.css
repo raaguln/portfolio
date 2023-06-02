@@ -1,4 +1,7 @@
 :root {
+  --color-light: #fffffe;
+  --color-dark: #252525;
+
   --fs-xl: 4.209rem;
   --fs-l: 3.157rem;
   --fs-m: 2.369rem;
@@ -23,7 +26,15 @@
   --blueA2: #4361ee;
   --blueA3: #3a0ca3;
 
-  --br: 16px;
+  --br: 1rem;
+}
+
+:is(h1, h2, h3, blockquote) {
+  --flow-space: 1.5em;
+}
+
+:is(h1, h2, h3) + * {
+  --flow-space: 0.5em;
 }
 
 /* :root {
@@ -52,9 +63,20 @@
 body {
   position: relative;
   max-width: 800px;
+  margin-inline: auto;
+  background-color: var(--color-light);
+  color: var(--color-dark);
   padding: 32px;
   line-height: 1.4;
   --webkit-font-smoothing: antialiased;
+}
+
+body > * + * {
+  margin-block-start: var(--flow-space, 1em);
+}
+
+article > * + * {
+  margin-block-start: var(--flow-space, 1em);
 }
 
 img,
@@ -78,16 +100,24 @@ h2,
 h3,
 h4,
 h5 {
-  line-height: 1.3;
   word-break: break-word;
-  /* overflow-wrap: break-word; */
   hyphens: auto;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
+h4,
+h5 {
+  line-height: 1.3;
 }
 
 h1 {
   font-size: var(--fs-xl);
   font-weight: 900;
-  margin-bottom: 1rem;
 }
 
 h2 {
@@ -100,8 +130,6 @@ h3 {
 
 h4 {
   font-size: var(--fs-s);
-  font-weight: 700;
-  letter-spacing: 2px;
 }
 
 h5 {
@@ -110,7 +138,7 @@ h5 {
 
 p {
   font-size: var(--fs-body);
-  margin-bottom: 1rem;
+  max-width: 65ch;
 }
 
 a {

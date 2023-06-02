@@ -1,7 +1,6 @@
 import { FC, ReactNode } from "react"
 import styles from "./title.module.css"
 import Link from "next/link"
-import { kalam } from "../fonts"
 
 interface Data {
   children: ReactNode
@@ -10,12 +9,11 @@ interface Data {
 
 const Title: FC<Data> = ({ children, homeRoute = true }) => {
   return (
-    <header
-      className={homeRoute ? styles.titleContainer : styles.titleContainer2}>
+    <header className={homeRoute ? styles.header : styles.header2}>
       <h1 className={styles.title}>
         {homeRoute ? (
           <>
-            <span className={`${kalam.className} ${styles.span}`}>
+            <span className={styles.span}>
               <Link href="/">rn</Link>
             </span>
             {" / "}
