@@ -1,29 +1,65 @@
 .titleContainer {
   position: relative;
   display: inline-block;
-  background-color: var(--blue0);
-  background-size: 30%;
-  padding: 0 16px 8px 16px;
-  border-radius: 26px;
+  background-color: var(--blueA2);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* padding: 0 16px 8px 16px; */
+  border-radius: 24px;
   border-top-left-radius: 0;
   margin-bottom: 1rem;
-  overflow: hidden;
 }
 
-/* .titleContainer::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  background-color: var(--blue0);
-  width: 200%;
-  height: 100%;
-  transform: translate(0, 0);
-  animation: width 1.5s ease-in-out;
-} */
+.titleContainer2 {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(
+    to right,
+    var(--blueA3),
+    var(--blueA2),
+    var(--blueA1),
+    var(--blueA3)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* padding: 0 16px 8px 16px; */
+  border-radius: 24px;
+  border-top-left-radius: 0;
+  margin-bottom: 1rem;
+}
 
 .title {
   color: black;
+}
+
+.span {
+  padding: 0 16px;
+  background: linear-gradient(
+    to right,
+    var(--blueA3),
+    var(--blueA2),
+    var(--blueA1),
+    var(--blueA3)
+  );
+  background-size: 300%;
+  background-position: 0% center;
+  color: white;
+  -webkit-background-clip: none;
+  -webkit-text-fill-color: white;
+  transition: background-position var(--anim-short) ease;
+  /* font-size: 2.441rem; */
+}
+
+.span:hover {
+  background-position: 30% center;
+}
+
+.span a {
+  text-decoration: none;
 }
 
 @keyframes width {

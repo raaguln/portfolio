@@ -16,7 +16,7 @@
   top: 50%;
   left: 0;
   opacity: 0;
-  background: linear-gradient(transparent, var(--blue1), transparent);
+  background: linear-gradient(transparent, var(--blueA2), transparent);
   height: 180px;
   width: 2px;
   transition: top var(--projects-link-duration) ease,
@@ -27,10 +27,10 @@
   position: relative;
   background: linear-gradient(
     to right,
-    var(--blue2),
-    var(--blue1),
-    var(--blue0),
-    var(--blue2)
+    var(--blueA3),
+    var(--blueA2),
+    var(--blueA1),
+    var(--blueA3)
   );
   background-size: 200%;
   -webkit-background-clip: text;
@@ -52,25 +52,25 @@
   height: 1px;
   background: linear-gradient(
     to right,
-    var(--blue2),
-    var(--blue1),
-    var(--blue0),
-    var(--blue2)
+    var(--blueA3),
+    var(--blueA2),
+    var(--blueA1),
+    var(--blueA3)
   );
   background-size: 200%;
   transition: background-position var(--projects-link-duration) ease;
 }
 
-.project:hover > .imgContainer::after {
+.imgContainer:hover::after {
   top: 0;
   opacity: 1;
 }
 
-.project:hover > .span {
-  background-position: -200% center;
+.span:hover {
+  background-position: -160% center;
 }
 
-.project:hover > .span::after {
+.span:hover::after {
   background-position: -200% center;
 }
 
@@ -99,10 +99,10 @@
   margin: 0 0 0.5rem 0;
 }
 
-@media screen and (max-width: 860px) {
+/* @media (max-width: 860px) {
   .project {
     margin: 1rem 0 2rem 0;
     width: 100%;
     max-width: 100%;
   }
-}
+} */

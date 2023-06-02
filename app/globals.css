@@ -1,12 +1,19 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-
 :root {
   --projects-link-duration: 1.4s;
-  --blue0: #4cc9f0;
-  --blue1: #4361ee;
-  --blue2: #3a0ca3;
+  --anim-short: 0.5s;
+  --blue1: #caf0f8;
+  --blue2: #ade8f4;
+  --blue3: #90e0ef;
+  --blue4: #48cae4;
+  --blue5: #00b4d8;
+  --blue6: #0096c7;
+  --blue7: #0077b6;
+  --blue8: #023e8a;
+  --blue9: #023e8a;
+
+  --blueA1: #4cc9f0;
+  --blueA2: #4361ee;
+  --blueA3: #3a0ca3;
 }
 
 /* :root {
@@ -21,16 +28,6 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 } */
 
 /* CSS Reset */
@@ -44,13 +41,10 @@ body {
 }
 body {
   position: relative;
-  padding: 1rem;
+  max-width: 800px;
+  padding: 32px;
   line-height: 1.4;
   --webkit-font-smoothing: antialiased;
-}
-
-body {
-  max-width: 650px;
 }
 
 img,
@@ -75,13 +69,16 @@ h3,
 h4,
 h5 {
   line-height: 1.3;
-  overflow-wrap: break-word;
+  word-break: break-word;
+  /* overflow-wrap: break-word; */
+  hyphens: auto;
+  width: fit-content;
 }
 
 h1 {
-  /* font-size: 3.052rem; */
-  font-size: 4.052rem;
+  font-size: 4.552rem;
   font-weight: 900;
+  margin-bottom: 1.5rem;
 }
 
 h2 {
@@ -90,7 +87,7 @@ h2 {
 
 h3 {
   font-size: 1.953rem;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 h4 {
@@ -103,22 +100,18 @@ h5 {
   font-size: 1.25rem;
 }
 
-.text_small {
-  font-size: 0.8rem;
+p {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 a {
   color: inherit;
 }
 
-a {
-  text-decoration: underline;
-}
-
-p {
-  margin-bottom: 1rem;
-}
-
-figcaption {
-  font-size: 85%;
+@media (max-width: 860px) {
+  body {
+    max-width: 100%;
+    padding: 24px;
+  }
 }
