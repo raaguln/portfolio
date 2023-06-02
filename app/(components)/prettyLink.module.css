@@ -8,28 +8,32 @@
     var(--blueA3)
   );
   background-size: 200%;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: bg 3s linear infinite;
+  width: fit-content;
 }
 
 .span a {
   text-decoration: none;
   font-weight: 600;
+  font-size: var(--fs-xs);
 }
 
 .span::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: 6px;
   left: 0;
   width: 100%;
-  height: 1px;
+  height: 2px;
   background: linear-gradient(
     to right,
     var(--blueA3),
     var(--blueA2),
     var(--blueA1),
+    var(--blueA2),
     var(--blueA3)
   );
   background-size: 200%;
@@ -47,6 +51,9 @@
 
 @media (prefers-reduced-motion: reduce) {
   .span {
+    animation: none;
+  }
+  .span::after {
     animation: none;
   }
 }

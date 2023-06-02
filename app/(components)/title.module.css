@@ -1,15 +1,11 @@
 .titleContainer {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
   background-color: var(--blueA2);
   background-size: 200%;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-  /* padding: 0 16px 8px 16px; */
-  border-radius: 24px;
-  border-top-left-radius: 0;
-  margin-bottom: 1rem;
 }
 
 .titleContainer2 {
@@ -23,6 +19,7 @@
     var(--blueA3)
   );
   background-size: 200%;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -37,6 +34,8 @@
 }
 
 .span {
+  border-radius: var(--br);
+  margin: 0;
   padding: 0 16px;
   background: linear-gradient(
     to right,
@@ -48,9 +47,10 @@
   background-size: 300%;
   background-position: 0% center;
   color: white;
+  background-clip: none;
   -webkit-background-clip: none;
   -webkit-text-fill-color: white;
-  transition: background-position var(--anim-short) ease;
+  transition: background-position var(--duration-short) ease;
   /* font-size: 2.441rem; */
 }
 

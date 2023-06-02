@@ -2,6 +2,7 @@ import { FC } from "react"
 import styles from "./project.module.css"
 import { ProjectData } from "@/data/projects"
 import PrettyLink from "./prettyLink"
+import { kalam } from "../fonts"
 import Link from "next/link"
 
 interface Data {
@@ -31,17 +32,22 @@ const Project: FC<Data> = ({ data }) => {
       {url ? (
         <span className={styles.span}>
           <Link href={url} target="_blank">
-            <h3 className={styles.projectTitle}>{title}</h3>
+            <h4 className={styles.projectTitle}>{title}</h4>
           </Link>
         </span>
       ) : (
         <h3 className={styles.projectTitle}>{title}</h3>
       )}
-      {brand ? <h4 className={styles.brand}>{brand}</h4> : null}
+      {brand ? (
+        <h4 className={`${styles.brand} ${kalam.className}`}>{brand}</h4>
+      ) : null}
       <p className={styles.description}>{description}</p>
       {interestingDetails ? (
         <p className={styles.description}>
-          <b>What's interesting:</b> {interestingDetails}
+          <span className={`${styles.interesting} ${kalam.className}`}>
+            What's interesting:
+          </span>{" "}
+          {interestingDetails}
         </p>
       ) : null}
     </article>

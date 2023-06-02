@@ -1,3 +1,9 @@
-import { Inter } from "next/font/google"
+import { Inter, Kalam } from "next/font/google"
 
-export const inter = Inter({ subsets: ["latin"], display: 'swap' })
+export const inter = Inter({ subsets: ["latin"], display: "swap" })
+
+export const kalam = Kalam({
+  subsets: ["latin"],
+  weight: "700",
+  display: "swap",
+})

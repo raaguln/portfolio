@@ -1,15 +1,19 @@
 import PrettyLink from "./(components)/prettyLink"
 import Title from "./(components)/title"
+import { kalam } from "./fonts"
+import styles from "./page.module.css"
 
 export default function Home() {
+  const spanCN = `${kalam.className} ${styles.span}`
   return (
     <>
       <Title homeRoute={false}>raagul nagendran</Title>
       <p>
-        Your friendly neighbourhood Data Scientist / Software Engineer currently
-        based out of Seattle. I love digging into data to uncover trends, build
-        highly custom and accessible software experiences and optimizing for the
-        fastest user experience.
+        Your friendly neighbourhood{" "}
+        <span className={spanCN}>Data Scientist / Software Engineer</span>{" "}
+        currently based out of Seattle. I love digging into data to uncover
+        trends, build highly custom and accessible software experiences and
+        optimizing for the fastest user experience.
       </p>
       <p>
         To check out my craft at previous companies, you can visit the{" "}
