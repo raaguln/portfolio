@@ -1,3 +1,4 @@
+import DarkModeToggle from "./(components)/darkModeToggle"
 import PrettyLink from "./(components)/prettyLink"
 import Title from "./(components)/title"
 import { kalam } from "./fonts"
@@ -7,7 +8,7 @@ export default function Home() {
   const spanCN = `${kalam.className} ${styles.span}`
   return (
     <>
-      <Title homeRoute={false}>raagul nagendran</Title>
+      <Title hasHomeRoute={false}>raagul nagendran</Title>
       <p>
         Your friendly neighbourhood{" "}
         <span className={spanCN}>Data Scientist / Software Engineer</span>{" "}
@@ -25,7 +26,11 @@ export default function Home() {
         <PrettyLink href="/projects" target="_blank">
           projects
         </PrettyLink>{" "}
-        section.
+        section. I also{" "}
+        <PrettyLink href="" target="_blank">
+          blog
+        </PrettyLink>{" "}
+        about them.
       </p>
 
       <p>
@@ -50,6 +55,7 @@ export default function Home() {
         .
       </p>
       {/* <Link href="">Mail</Link> */}
+      <DarkModeToggle />
     </>
   )
 }

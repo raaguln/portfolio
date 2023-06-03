@@ -1,7 +1,8 @@
 :root {
-  --color-light: #fffffe;
-  --color-dark: #252525;
+  --background-color: #fffffe;
+  --text-color: #252525;
 
+  --fs-xxl: 5.3rem;
   --fs-xl: 4.209rem;
   --fs-l: 3.157rem;
   --fs-m: 2.369rem;
@@ -11,6 +12,7 @@
 
   --duration-long: 1.2s;
   --duration-short: 0.5s;
+  --duration-super-short: 0.15s;
 
   --blue1: #caf0f8;
   --blue2: #ade8f4;
@@ -26,7 +28,15 @@
   --blueA2: #4361ee;
   --blueA3: #3a0ca3;
 
-  --br: 1rem;
+  --grad-blue: #21d4fd;
+  --grad-violet: #b721ff;
+
+  --br: 0.3rem;
+}
+
+[data-theme="dark"] {
+  --background-color: #111111;
+  --text-color: #fafafa;
 }
 
 :is(h1, h2, h3, blockquote) {
@@ -64,11 +74,14 @@ body {
   position: relative;
   max-width: 800px;
   margin-inline: auto;
-  background-color: var(--color-light);
-  color: var(--color-dark);
+  background-color: var(--background-color);
+  color: var(--text-color);
   padding: 32px;
+  margin-bottom: calc(80px + 1.5rem); /* For dark mode toggle */
   line-height: 1.4;
   --webkit-font-smoothing: antialiased;
+  transition: background var(--duration-super-short) ease-in-out,
+    color var(--duration-super-short) ease-in-out;
 }
 
 body > * + * {

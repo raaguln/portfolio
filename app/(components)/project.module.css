@@ -16,7 +16,8 @@
   top: 50%;
   left: 0;
   opacity: 0;
-  background: linear-gradient(transparent, var(--blueA2), transparent);
+  background: transparent;
+  background: linear-gradient(transparent, var(--grad-violet), transparent);
   height: 180px;
   width: 2px;
   transition: top var(--duration-short) ease, opacity var(--duration-short) ease;
@@ -25,12 +26,12 @@
 .span {
   position: relative;
   width: fit-content;
-  background: linear-gradient(
+  background-color: var(--grad-blue);
+  background-image: linear-gradient(
     to right,
-    var(--blueA3),
-    var(--blueA2),
-    var(--blueA1),
-    var(--blueA3)
+    var(--grad-blue),
+    var(--grad-violet),
+    var(--grad-blue)
   );
   background-size: 200%;
   background-clip: text;
@@ -44,19 +45,19 @@
   font-weight: 600;
 }
 
-.span::after {
+.span > a > h4::after {
   content: "";
   position: absolute;
   bottom: 3px;
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(
+  background-color: var(--grad-blue);
+  background-image: linear-gradient(
     to right,
-    var(--blueA3),
-    var(--blueA2),
-    var(--blueA1),
-    var(--blueA3)
+    var(--grad-blue),
+    var(--grad-violet),
+    var(--grad-blue)
   );
   background-size: 200%;
   transition: background-position var(--duration-long) ease;
@@ -71,15 +72,15 @@
   background-position: -160% center;
 }
 
-.span:hover::after {
+.span > a > h4:hover::after {
   background-position: -200% center;
 }
 
 .img {
   object-fit: contain;
-  /* aspect-ratio: auto 1496 / 853; */
   width: 100%;
   height: 100%;
+  border-radius: var(--br);
 }
 
 .imgCaption {
@@ -88,7 +89,6 @@
 }
 
 .projectTitle {
-  /* margin: 1rem 0 0 0; */
   font-size: var(--fs-m);
   font-weight: 900;
 }

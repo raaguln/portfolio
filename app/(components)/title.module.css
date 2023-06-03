@@ -10,12 +10,11 @@
 
 .header2 {
   position: relative;
-  background: linear-gradient(
-    to right,
-    var(--blueA3),
-    var(--blueA2),
-    var(--blueA1),
-    var(--blueA3)
+  background-color: var(--grad-blue);
+  background-image: linear-gradient(
+    19deg,
+    var(--grad-blue) 0%,
+    var(--grad-violet) 100%
   );
   background-size: 200%;
   background-clip: text;
@@ -25,21 +24,19 @@
 }
 
 .title {
-  /* display: inline-flex;
-  justify-content: center;
-  align-items: center; */
   color: black;
 }
 
-.span {
-  /* border-radius: var(--br); */
+.title a {
+  text-decoration: none;
+  border-radius: var(--br);
   padding: 0 1rem 0.5rem 1rem;
-  background: linear-gradient(
+  background-color: var(--grad-blue);
+  background-image: linear-gradient(
     to right,
-    var(--blueA3),
-    var(--blueA2),
-    var(--blueA1),
-    var(--blueA3)
+    var(--grad-blue),
+    var(--grad-violet),
+    var(--grad-blue)
   );
   background-size: 300%;
   background-position: 0% center;
@@ -51,19 +48,12 @@
   transition: background-position var(--duration-short) ease;
 }
 
-.span:hover {
-  background-position: 30% center;
+.title a:hover {
+  background-position: -100% center;
 }
 
-.span a {
-  text-decoration: none;
-}
-
-@keyframes width {
-  from {
-    transform: translate(-100%, 0);
-  }
-  to {
-    transform: translate(0, 0);
-  }
+.span {
+  font-size: var(--fs-xxl);
+  letter-spacing: -3px;
+  vertical-align: middle;
 }

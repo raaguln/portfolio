@@ -1,12 +1,19 @@
 .span {
   position: relative;
-  background: linear-gradient(
+  background-color: var(--grad-blue);
+  background-image: linear-gradient(
+    to right,
+    var(--grad-blue),
+    var(--grad-violet),
+    var(--grad-blue)
+  );
+  /* background: linear-gradient(
     to right,
     var(--blueA3),
     var(--blueA2),
     var(--blueA1),
     var(--blueA3)
-  );
+  ); */
   background-size: 200%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -28,14 +35,21 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(
+  background-color: var(--grad-blue);
+  background-image: linear-gradient(
+    to right,
+    var(--grad-blue),
+    var(--grad-violet),
+    var(--grad-blue)
+  );
+  /* background: linear-gradient(
     to right,
     var(--blueA3),
     var(--blueA2),
     var(--blueA1),
     var(--blueA2),
     var(--blueA3)
-  );
+  ); */
   background-size: 200%;
   animation: bg 3s linear infinite;
 }

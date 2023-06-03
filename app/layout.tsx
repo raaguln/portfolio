@@ -1,5 +1,6 @@
+import Providers from "./providers"
 import "./globals.css"
-import { inter } from './fonts'
+import { inter } from "./fonts"
 
 export const metadata = {
   title: "Raagul Nagendran",
@@ -10,10 +11,12 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
-  }) {
+}) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   )
 }

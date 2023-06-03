@@ -22,12 +22,10 @@ const Project: FC<Data> = ({ data }) => {
   } = data
   return (
     <article className={styles.project}>
-      <div className={styles.imgContainer}>
-        <figure>
-          <img className={styles.img} src={img} alt={imgAlt} />
-          <figcaption className={styles.imgCaption}>{imgCaption}</figcaption>
-        </figure>
-      </div>
+      <figure className={styles.imgContainer}>
+        <img className={styles.img} src={img} alt={imgAlt} />
+        <figcaption className={styles.imgCaption}>{imgCaption}</figcaption>
+      </figure>
       {url ? (
         <span className={styles.span}>
           <Link href={url} target="_blank">
