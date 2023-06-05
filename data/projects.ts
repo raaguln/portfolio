@@ -36,8 +36,10 @@ const projects: ProjectData[] = [
      with FCP and TTI had the best score possible. We are talking about Web Workers, animation optimizations,
      rendering optimizations and lazy loading.`,
     img: "images/what-a-year.png",
-    imgAlt: "",
-    imgCaption: "",
+    imgAlt:
+      "Hero image for the website consisting of a colorful 2020 logo and a parallax gallery of Condé's magazine cover images as background.",
+    imgCaption:
+      "lHero image for the website consisting of a colorfu 2020 logo and a parallax gallery of Condé's magazine cover images as background.",
     url: "https://2020whatayear.conde.io/",
     date: "",
   },
@@ -49,8 +51,10 @@ const projects: ProjectData[] = [
     interestingDetails: `3x longer time spent than average Epicurious article. Got featured on Fox10 news. Using editorial guidance for building the menu based on user's input, we built a custom
     decision tree (algorithm for the app + visualization to debug all possible recommendations).`,
     img: "images/epi-thanksgiving-quiz.png",
-    imgAlt: "",
-    imgCaption: "",
+    imgAlt:
+      "The customized menu after taking the quiz, which recommends appetizers, main dishes and drinks.",
+    imgCaption:
+      "The customized menu after taking the quiz, which recommends appetizers, main dishes and drinks.",
     url: "https://www.epicurious.com/recipes-menus/quiz-thanksgiving-menu-ideas-article",
     date: "",
   },
@@ -61,8 +65,10 @@ const projects: ProjectData[] = [
       "Developed a tribute website to demonstrate ten designers celebrating the legacy of Karl Lagerfeld, the theme for Met Gala 2023.",
     interestingDetails: "",
     img: "images/data-story-lab.png",
-    imgAlt: "",
-    imgCaption: "",
+    imgAlt:
+      "A scrollable header section that emphasizes the models and the magazine cover image.",
+    imgCaption:
+      "A scrollable header section that emphasizes the models and the magazine cover image.",
     url: "https://www.vogue.com/article/karl-lagerfeld-tribute-may-2023-cover",
     date: "",
   },
@@ -102,7 +108,7 @@ const projects: ProjectData[] = [
     interestingDetails: `This was our first quiz project, and there was a lot of debugging done to get the logic right.
       Ensuring that all possible pathways were covered and enabled the user to reach a travel destination.`,
     img: "images/cnt-vacation-quiz.png",
-    imgCaption: "A quiz to help you find your dream vacation.",
+    imgCaption: "Landing page of the Vacation Quiz.",
     imgAlt: "Landing page of the Vacation Quiz.",
     url: "https://www.cntraveler.com/story/where-should-you-go-on-vacation-next",
     date: "",
@@ -133,18 +139,6 @@ const projects: ProjectData[] = [
     imgCaption:
       "The questions generator app lives in an iframe within the main article. Clicking on either of the jars will result in a two-stage paper unfold animation to reveal the question.",
     url: "https://www.teenvogue.com/story/truth-or-dare-online-game-and-idea-generator",
-    date: "",
-  },
-  {
-    title: "Shoppable Wedding Moodboard",
-    brand: "Glamour",
-    description:
-      "An interactive moodboard to curate your wedding guest look and shop the look.",
-    interestingDetails: "",
-    img: "images/glamour-wedding-moodboard.png",
-    imgAlt: "",
-    imgCaption: "",
-    url: "https://www.glamour.com/story/wedding-guest-dress-packing-list",
     date: "",
   },
   {
@@ -181,17 +175,29 @@ const projects: ProjectData[] = [
     url: "https://www.self.com/package/my-way-to-well",
     date: "",
   },
-  {
-    title: "Thanksgiving Side Dish Personality Quiz",
-    brand: "Bon Appetit",
-    description: "",
-    interestingDetails: "",
-    img: "images/ba-thanksgiving-side-dish.png",
-    imgAlt: "",
-    imgCaption: "",
-    url: "https://www.bonappetit.com/story/thanksgiving-sides-personality-quiz",
-    date: "",
-  },
+  // {
+  //   title: "Thanksgiving Side Dish Personality Quiz",
+  //   brand: "Bon Appetit",
+  //   description: "",
+  //   interestingDetails: "",
+  //   img: "images/ba-thanksgiving-side-dish.png",
+  //   imgAlt: "",
+  //   imgCaption: "",
+  //   url: "https://www.bonappetit.com/story/thanksgiving-sides-personality-quiz",
+  //   date: "",
+  // },
+  // {
+  //   title: "Shoppable Wedding Moodboard",
+  //   brand: "Glamour",
+  //   description:
+  //     "An interactive moodboard to curate your wedding guest look and shop the look.",
+  //   interestingDetails: "",
+  //   img: "images/glamour-wedding-moodboard.png",
+  //   imgAlt: "",
+  //   imgCaption: "",
+  //   url: "https://www.glamour.com/story/wedding-guest-dress-packing-list",
+  //   date: "",
+  // },
   // {
   //   title: "What Unites Us",
   //   brand: "Glamour",
