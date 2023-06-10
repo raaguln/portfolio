@@ -39,7 +39,7 @@ const projects: ProjectData[] = [
     imgAlt:
       "Hero image for the website consisting of a colorful 2020 logo and a parallax gallery of Condé's magazine cover images as background.",
     imgCaption:
-      "lHero image for the website consisting of a colorfu 2020 logo and a parallax gallery of Condé's magazine cover images as background.",
+      "Hero image for the website consisting of a colorfu 2020 logo and a parallax gallery of Condé's magazine cover images as background.",
     url: "https://2020whatayear.conde.io/",
     date: "",
   },
