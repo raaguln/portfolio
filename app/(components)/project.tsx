@@ -22,22 +22,24 @@ const Project: FC<Data> = ({ data }) => {
   } = data
   return (
     <article className={styles.project}>
+      <div className={styles.sticky}>
+        {url ? (
+          <span className={styles.span}>
+            <Link href={url} target="_blank">
+              <h3 className={styles.projectTitle}>{title}</h3>
+            </Link>
+          </span>
+        ) : (
+          <h3 className={styles.projectTitle}>{title}</h3>
+        )}
+        {brand ? (
+          <h4 className={`${styles.brand} ${kalam.className}`}>{brand}</h4>
+        ) : null}
+      </div>
       <figure className={styles.imgContainer}>
         <img className={styles.img} src={img} alt={imgAlt} />
         <figcaption className={styles.imgCaption}>{imgCaption}</figcaption>
       </figure>
-      {url ? (
-        <span className={styles.span}>
-          <Link href={url} target="_blank">
-            <h4 className={styles.projectTitle}>{title}</h4>
-          </Link>
-        </span>
-      ) : (
-        <h3 className={styles.projectTitle}>{title}</h3>
-      )}
-      {brand ? (
-        <h4 className={`${styles.brand} ${kalam.className}`}>{brand}</h4>
-      ) : null}
       <p className={styles.description}>{description}</p>
       {interestingDetails ? (
         <p className={styles.description}>

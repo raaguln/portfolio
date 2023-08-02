@@ -57,3 +57,12 @@
   letter-spacing: -3px;
   vertical-align: middle;
 }
+
+@media (max-width: 500px) {
+  .title {
+    font-size: var(--fs-l);
+  }
+  .span {
+    font-size: var(--fs-xl);
+  }
+}
