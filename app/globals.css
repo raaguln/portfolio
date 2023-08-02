@@ -164,3 +164,15 @@ a {
     padding: 24px;
   }
 }
+
+@media (max-width: 500px) {
+  body {
+    padding: 14px;
+  }
+  h1 {
+    font-size: var(--fs-l);
+  }
+  h2 {
+    font-size: var(--fs-m);
+  }
+}

@@ -2,5 +2,7 @@
   position: fixed;
   bottom: 1.5rem;
   right: 1.5rem;
+  box-shadow: 0 0 10px 10px var(--background-color);
+  transition: box-shadow var(--duration-super-short) ease-in-out;
   /* transform: translate(-50%, 0); */
 }
