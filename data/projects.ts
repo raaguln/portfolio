@@ -15,23 +15,51 @@ const projects: ProjectData[] = [
     title: "Inside the Suspicion Machine",
     brand: "WIRED",
     description:
-      "Developed the interactive scrollytelling website that highlighted how a machine learning algorithm fostered discrimination and biases in real life. Converted 2 years of investigative reporting (Lighthouse Reports + WIRED) using engaging visualizations in a digestable format for public consumption.",
+      "Developed the interactive scrollytelling website that highlighted how a machine learning algorithm fostered discrimination and societal bias in real life. Simplified the results of exploratory fairness analysis (done by Lighthouse Reports) using engaging visualizations and intuitive distribution charts.",
     interestingDetails:
-      "Screen reader accessible. The distribution chart (CROSSING THE LINE) animates thousands of SVG <circle> elements at ~60fps, even on mobile devices. How does this happen? Find out here.",
-    img: "images/data-story-lab.png",
+      "The distribution chart (CROSSING THE LINE) achieves ~60fps animation despite animating more than a thousand DOM nodes, even on mobile devices.",
+    img: "images/wired-algo.png",
     imgAlt:
-      "Distribution chart highlighting the algorithm's biased decision making.",
+      "Screenshot of the WIRED article, highlighting the algorithm's biased decision making.",
     imgCaption:
       "Distribution chart highlighting the algorithm's biased decision making.",
     url: "https://www.wired.com/story/welfare-state-algorithms/",
     date: "",
   },
   {
+    title: "Custom Thanksgiving Menu Quiz",
+    brand: "Epicurious",
+    description: `Developed an interactive quiz customizes a highly curated and tailored Thanksgiving menu from 172
+    possible recipes based on user’s answer to questions.`,
+    interestingDetails: `Based on editors recommendations, we built a custom decision tree (algorithm for the app 
+      + visualization to debug all possible recommendations).`,
+    img: "images/epi-quiz.png",
+    imgAlt:
+      "The customized menu after taking the quiz, which recommends appetizers, main dishes and drinks.",
+    imgCaption:
+      "The customized menu after taking the quiz, which recommends appetizers, main dishes and drinks.",
+    url: "https://www.epicurious.com/recipes-menus/quiz-thanksgiving-menu-ideas-article",
+    date: "",
+  },
+  {
+    title: "Where Should You Go On Vacation Next?",
+    brand: "Condé Nast Traveller",
+    description: `This interactive quiz recommends the ideal place for a vacation from a list of travel destinations curated by the editors based on user's choices.`,
+    interestingDetails: `This was our first quiz project, and there was a lot of debugging done to get the logic right.
+      Ensuring that all possible pathways were covered and enabled the user to reach a travel destination.`,
+    img: "images/cnt-quiz.png",
+    imgCaption: "Landing page of the Vacation Quiz.",
+    imgAlt: "Landing page of the Vacation Quiz.",
+    url: "https://www.cntraveler.com/story/where-should-you-go-on-vacation-next",
+    date: "",
+  },
+  {
     title: "2020, What a Year",
     brand: "Condé Nast",
-    description: `Internal scrollytelling website analyzing trends and patterns from Condé Nast articles.
-      Consists of animated cluster charts, parallax image gallery, custom visualizations and lots more - 
-      all animated through scroll-triggers.`,
+    description: `Like Spotify Wrapped, but for Condé. Internal scrollytelling website analyzing trends 
+      and patterns of articles published in 2020.
+      Consists of animated cluster charts, parallax image gallery, custom visualizations and lots more; 
+      all scroll-driven.`,
     interestingDetails: `A lot of performance optimizations were done to ensure core web vitals along
      with FCP and TTI had the best score possible. We are talking about Web Workers, animation optimizations,
      rendering optimizations and lazy loading.`,
@@ -44,27 +72,12 @@ const projects: ProjectData[] = [
     date: "",
   },
   {
-    title: "Custom Thanksgiving Menu Quiz",
-    brand: "Epicurious",
-    description: `Developed an interactive quiz customizes a highly curated and tailored Thanksgiving menu from 172
-    possible recipes based on user’s choices. `,
-    interestingDetails: `3x longer time spent than average Epicurious article. Got featured on Fox10 news. Using editorial guidance for building the menu based on user's input, we built a custom
-    decision tree (algorithm for the app + visualization to debug all possible recommendations).`,
-    img: "images/epi-thanksgiving-quiz.png",
-    imgAlt:
-      "The customized menu after taking the quiz, which recommends appetizers, main dishes and drinks.",
-    imgCaption:
-      "The customized menu after taking the quiz, which recommends appetizers, main dishes and drinks.",
-    url: "https://www.epicurious.com/recipes-menus/quiz-thanksgiving-menu-ideas-article",
-    date: "",
-  },
-  {
     title: "Karl Lagerfeld - A Celebration",
     brand: "Vogue",
     description:
       "Developed a tribute website to demonstrate ten designers celebrating the legacy of Karl Lagerfeld, the theme for Met Gala 2023.",
     interestingDetails: "",
-    img: "images/data-story-lab.png",
+    img: "images/vogue-karl.png",
     imgAlt:
       "A scrollable header section that emphasizes the models and the magazine cover image.",
     imgCaption:
@@ -93,7 +106,7 @@ const projects: ProjectData[] = [
     interestingDetails: `Managing the hover popups for each region was challenging. Allowing
      recipe links to be accessible while moving within the popup, avoiding overlap between
      the popups and preventing popup glitch / jerk between regions across different layouts was ... fun.`,
-    img: "images/epi-chinese-recipe-map.png",
+    img: "images/epi-map.png",
     imgAlt:
       "Interactive China map that showcases a region's special cuisine on hover.",
     imgCaption:
@@ -102,43 +115,41 @@ const projects: ProjectData[] = [
     date: "",
   },
   {
-    title: "Where Should You Go On Vacation Next?",
-    brand: "Condé Nast Traveller",
-    description: `This interactive quiz recommends the ideal place for a vacation from a list of travel destinations curated by the editors based on user's choices.`,
-    interestingDetails: `This was our first quiz project, and there was a lot of debugging done to get the logic right.
-      Ensuring that all possible pathways were covered and enabled the user to reach a travel destination.`,
-    img: "images/cnt-vacation-quiz.png",
-    imgCaption: "Landing page of the Vacation Quiz.",
-    imgAlt: "Landing page of the Vacation Quiz.",
-    url: "https://www.cntraveler.com/story/where-should-you-go-on-vacation-next",
-    date: "",
-  },
-  {
     title: "Find your Perfect Headphone Quiz",
     brand: "WIRED",
     description: `This interactive quiz recommends the best earbuds and headphones from a curated collection of 
       the best musical mates based on user's requirements.`,
-    interestingDetails: `Having built a couple of quizzes by this point, the logic implementation was a walk in the park.
-      But the challenging part was the headphone jack connecting the entire quiz and making sure that it stayed responsive.`,
+    interestingDetails: `The headphone jack weaves through each question perfectly, across different screens and devices.`,
     img: "images/wired-headphone-quiz.png",
     imgAlt: "",
     imgCaption: "",
     url: "https://www.wired.com/story/best-headphones-or-earbuds-for-you-quiz/",
     date: "",
   },
-
+  // {
+  //   title: "Truth or Dare Idea Generator",
+  //   brand: "Teen Vogue",
+  //   description:
+  //     "This tool helps the users generate weird dares and salicious truths for a spicy truth or dare game.",
+  //   interestingDetails: `The paper unfold animation. Had fun developing it, had fun testing and debugging it, still having fun clicking through the dares after launch.`,
+  //   img: "images/truth-or-dare.png",
+  //   imgAlt:
+  //     "The questions generator app lives in an iframe within the main article. Clicking on either of the jars will result in a two-stage paper unfold animation to reveal the question.",
+  //   imgCaption:
+  //     "The questions generator app lives in an iframe within the main article. Clicking on either of the jars will result in a two-stage paper unfold animation to reveal the question.",
+  //   url: "https://www.teenvogue.com/story/truth-or-dare-online-game-and-idea-generator",
+  //   date: "",
+  // },
   {
-    title: "Truth or Dare Idea Generator",
-    brand: "Teen Vogue",
+    title: "People's List 25th Anniversary",
+    brand: "Pitchfork",
     description:
-      "This tool helps the users generate weird dares and salicious truths for a spicy truth or dare game.",
-    interestingDetails: `The paper unfold animation. Had fun developing it, had fun testing and debugging it, still having fun clicking through the dares after launch.`,
-    img: "images/truth-or-dare.png",
-    imgAlt:
-      "The questions generator app lives in an iframe within the main article. Clicking on either of the jars will result in a two-stage paper unfold animation to reveal the question.",
-    imgCaption:
-      "The questions generator app lives in an iframe within the main article. Clicking on either of the jars will result in a two-stage paper unfold animation to reveal the question.",
-    url: "https://www.teenvogue.com/story/truth-or-dare-online-game-and-idea-generator",
+      "For their 25th Anniversary, we developed a interactive scrollytelling narrative to let user's explore and visualize their favourite music's rankings.",
+    interestingDetails: "",
+    img: "images/pitchfork-people-list.png",
+    imgAlt: "",
+    imgCaption: "",
+    url: "https://pitchfork.com/features/lists-and-guides/peoples-list-25th-anniversary/",
     date: "",
   },
   {
@@ -150,18 +161,6 @@ const projects: ProjectData[] = [
     imgAlt: "",
     imgCaption: "",
     url: "https://pitchfork.com/features/lists-and-guides/2021-readers-poll-results/",
-    date: "",
-  },
-  {
-    title: "People's List 25th Anniversary",
-    brand: "Pitchfork",
-    description:
-      "For their 25th Anniversary, we developed a interactive scrollytelling narrative to let user's explore their rankings.",
-    interestingDetails: "",
-    img: "images/pitchfork-people-list.png",
-    imgAlt: "",
-    imgCaption: "",
-    url: "https://pitchfork.com/features/lists-and-guides/peoples-list-25th-anniversary/",
     date: "",
   },
   {
