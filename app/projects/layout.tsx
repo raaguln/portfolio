@@ -3,8 +3,9 @@ import "../globals.css"
 import { inter } from "../fonts"
 
 export const metadata = {
-  title: "Blog - Raagul",
-  description: "Portfolio of Raagul Nagendran.",
+  title: "Projects - Raagul",
+  description:
+    "A non-exhaustive list of personal & side projects Raagul has worked on till date.",
 }
 
 export default function RootLayout({
@@ -13,8 +14,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+    <html lang="en" suppressHydrationWarning className={inter.className}>
+      <body>
         <Providers>{children}</Providers>
       </body>
     </html>
