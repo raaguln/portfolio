@@ -11,24 +11,32 @@ export default function Home() {
       <Title hasHomeRoute={false}>raagul nagendran</Title>
       <p>
         Your friendly neighbourhood{" "}
-        <span className={spanCN}>Data Scientist / Software Engineer</span>.
+        <span className={spanCN}>Data Scientist / Software Engineer</span> who
+        specializes in -
       </p>
+      <ul>
+        <li>
+          developing predictive models to tackle complex problem statements
+        </li>
+        <li>building custom and accessible software experiences</li>
+      </ul>
       <p>
-        You can find me exploring real-life applications of{" "}
-        <span className={spanCN}>Natural Language Processing</span> and{" "}
-        <span className={spanCN}>Computer Vision</span> as a part of my Data
-        Science graduate degree in University of Washington, Seattle. I love
-        developing digging into data to uncover trends, build highly custom and
-        accessible software experiences and optimizing for the fastest user
-        experience.
+        You can find me exploring real-life applications of NLP and Computer
+        Vision as a part of my Data Science graduate degree in{" "}
+        <span className={spanCN}>University of Washington, Seattle</span>.
       </p>
       <p>
         To check out my craft at previous companies, you can visit the{" "}
         <PrettyLink href="/work" target="_blank">
           work
         </PrettyLink>{" "}
-        section. I also tinker with software and data during my free time, which
-        you can find in the{" "}
+        section. I also share my experience through{" "}
+        <PrettyLink href="/speaking" target="_blank">
+          conference talks
+        </PrettyLink>
+        .
+        {/* I also tinker with software and data during my free time, which you
+        can find in the{" "}
         <PrettyLink href="/projects" target="_blank">
           projects
         </PrettyLink>{" "}
@@ -36,7 +44,7 @@ export default function Home() {
         <PrettyLink href="" target="_blank">
           blog
         </PrettyLink>{" "}
-        about them.
+        about them. */}
       </p>
 
       {/* <p>

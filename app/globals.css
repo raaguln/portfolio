@@ -136,7 +136,8 @@ h5 {
   font-size: var(--fs-xs);
 }
 
-p {
+p,
+li {
   font-size: var(--fs-body);
   max-width: 65ch;
 }
