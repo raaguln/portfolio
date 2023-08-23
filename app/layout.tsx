@@ -1,8 +1,9 @@
+import { Metadata } from "next"
 import Providers from "./providers"
 import "./globals.css"
 import { inter } from "./fonts"
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Raagul Nagendran",
   description: "Portfolio of Raagul Nagendran.",
 }
@@ -13,8 +14,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+    <html lang="en" className={inter.className}>
+      <body>
         <Providers>{children}</Providers>
       </body>
     </html>

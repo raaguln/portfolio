@@ -47,20 +47,6 @@
   --flow-space: 0.5em;
 }
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
-
 /* CSS Reset */
 *,
 *::before,
@@ -121,6 +107,7 @@ h1,
 h2,
 h3 {
   line-height: 1.1;
+  text-wrap: balance;
 }
 
 h4,
