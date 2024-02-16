@@ -15,8 +15,9 @@ export default function Home() {
         Engineering (previously SDE 1 at Condé Nast).
       </p>
       <p>
-      I worked on developing an explanatory website for WIRED that highlighted the 
-      issues of data bias and simplified machine learning interpretability 
+      I worked on developing an explanatory website for{" "}
+      <PrettyLink href="https://www.wired.com/story/welfare-state-algorithms/" target="_blank">WIRED</PrettyLink>{" "}
+      that highlighted the issues of data bias and simplified machine learning interpretability 
       in Rotterdam's welfare fraud detection algorithm. This experience fueled 
       my desire to delve deeper into the field, propelling me to the{" "}
       <span className={spanCN}>Master's in Data Science</span> program at the{" "}
