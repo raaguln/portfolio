@@ -11,26 +11,30 @@ export default function Home() {
       <Title hasHomeRoute={false}>raagul nagendran</Title>
       <p>
         Your friendly neighbourhood{" "}
-        <span className={spanCN}>Data Scientist / Software Engineer</span> who
-        specializes in -
-      </p>
-      <ul>
-        <li>
-          developing predictive models to tackle complex problem statements
-        </li>
-        <li>building custom and accessible software experiences</li>
-      </ul>
-      <p>
-        You can find me exploring real-life applications of NLP and Computer
-        Vision as a part of my Data Science graduate degree in{" "}
-        <span className={spanCN}>University of Washington, Seattle</span>.
+        <span className={spanCN}>Data Scientist</span> who's pivoting from Software 
+        Engineering (previously SDE 1 at Condé Nast).
       </p>
       <p>
-        To check out my craft at previous companies, you can visit the{" "}
+      I worked on developing an explanatory website for WIRED that highlighted the 
+      issues of data bias and simplified machine learning interpretability 
+      in Rotterdam's welfare fraud detection algorithm. This experience fueled 
+      my desire to delve deeper into the field, propelling me to the{" "}
+      <span className={spanCN}>Master's in Data Science</span> program at the{" "}
+      <span className={spanCN}>University of Washington, Seattle</span>.
+      </p>
+      <p>
+      Now, I'm actively honing my skills by exploring diverse projects, ranging from{" "}
+      <span className={spanCN}>churn analysis</span>{" "}to the cutting-edge realm of {" "}
+      <span className={spanCN}>fine-tuning large language models</span>. Through these endeavors, 
+      I'm gaining hands-on experience with experimental design methodologies and statistical machine learning, 
+      solidifying my foundation for a future in ethical and impactful data science.
+      </p>
+      <p>
+        To check out my craft at previous company, you can visit the{" "}
         <PrettyLink href="/work" target="_blank">
           work
         </PrettyLink>{" "}
-        section. I also share my experience through{" "}
+        section. I also have shared my web development experience through{" "}
         <PrettyLink href="/speaking" target="_blank">
           conference talks
         </PrettyLink>
@@ -52,7 +56,11 @@ export default function Home() {
         pitch.
       </p> */}
       <p>
-        You can find me on{" "}
+        You can reach out to me through{" "}
+        <PrettyLink href="mailto:raaguln@uw.edu" target="_blank">
+          email
+        </PrettyLink>
+        ,{" "}
         <PrettyLink href="https://github.com/beyondtheinferno" target="_blank">
           github
         </PrettyLink>
@@ -67,6 +75,12 @@ export default function Home() {
           twitter
         </PrettyLink>
         .
+      </p>
+      <p>
+        Here's the link to my{" "}
+        <PrettyLink href="https://drive.google.com/file/d/1mWdIyyQ3irhFO9lwWPT5P7V9fDhVl_8j/view" target="_blank">
+          resume
+        </PrettyLink>.
       </p>
       {/* <Link href="">Mail</Link> */}
       <DarkModeToggle />
